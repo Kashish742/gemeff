@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h2>Analysis Result</h2>
+    {% if failed_bins %}
+        <p>Failed Bins: {{ failed_bins | join(', ') }}</p>
+    {% else %}
+        <p>All bins passed!</p>
+    {% endif %}
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
